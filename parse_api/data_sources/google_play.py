@@ -8,7 +8,7 @@ class GooglePlayDataSource:
 
     @property
     def data_path(self):
-        return './seq2sql_api/data_sources/resources/google_play/googleplaystore.csv'
+        return './parse_api/data_sources/resources/google_play/googleplaystore.csv'
 
     def _load_data(self):
         self.df = pd.read_csv(self.data_path)
