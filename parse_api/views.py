@@ -10,7 +10,7 @@ class ParseRequest(views.APIView):
     def post(self, request):
         data_source_name = request.data.get('data_source', 'google_play')
         query = request.data.get('query', 'by genres')
-        max_lines = request.data.get('max_lines', 10)
+        max_lines = request.data.get('max_lines', 36)
         if data_source_name == 'google_play':
             data_source = GooglePlayDataSource()
         else:

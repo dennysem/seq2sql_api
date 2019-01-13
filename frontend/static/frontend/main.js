@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _DataProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DataProvider */ \"./frontend/src/components/DataProvider.js\");\n/* harmony import */ var _Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Table */ \"./frontend/src/components/Table.js\");\n/* harmony import */ var _SearchBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SearchBar */ \"./frontend/src/components/SearchBar.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\n\n\n\n\nvar App =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    var _getPrototypeOf2;\n\n    var _temp, _this;\n\n    _classCallCheck(this, App);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(App)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {\n      query: '',\n      data_source: 'google_play'\n    }, _this.makeQuery = function (query) {\n      _this.setState({\n        query: query\n      });\n    }, _temp));\n  }\n\n  _createClass(App, [{\n    key: \"render\",\n    value: function render() {\n      console.log(this.state.query);\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"App\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"container\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchBar__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        makeQuery: this.makeQuery\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DataProvider__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n        endpoint: \"api/parse/\",\n        query: this.state.query,\n        data_source: this.state.data_source,\n        render: function render(data) {\n          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n            data: data\n          });\n        }\n      })));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\nvar wrapper = document.getElementById(\"app\");\nwrapper ? react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), wrapper) : null;\n\n//# sourceURL=webpack:///./frontend/src/components/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _DataProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DataProvider */ \"./frontend/src/components/DataProvider.js\");\n/* harmony import */ var _Table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Table */ \"./frontend/src/components/Table.js\");\n/* harmony import */ var _SearchBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SearchBar */ \"./frontend/src/components/SearchBar.js\");\n/* harmony import */ var _layout_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layout/Header */ \"./frontend/src/components/layout/Header.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\n\n\n\n\n\nvar App =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(App, _Component);\n\n  function App() {\n    var _getPrototypeOf2;\n\n    var _temp, _this;\n\n    _classCallCheck(this, App);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(App)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {\n      query: '',\n      data_source: 'google_play'\n    }, _this.makeQuery = function (query) {\n      _this.setState({\n        query: query\n      });\n    }, _temp));\n  }\n\n  _createClass(App, [{\n    key: \"render\",\n    value: function render() {\n      console.log(this.state.query);\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"App\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n        className: \"container\"\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layout_Header__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchBar__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {\n        makeQuery: this.makeQuery\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DataProvider__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n        endpoint: \"api/parse/\",\n        query: this.state.query,\n        data_source: this.state.data_source,\n        render: function render(data) {\n          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n            data: data\n          });\n        }\n      })));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\nvar wrapper = document.getElementById(\"app\");\nwrapper ? react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), wrapper) : null;\n\n//# sourceURL=webpack:///./frontend/src/components/App.js?");
 
 /***/ }),
 
@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SearchBar\", function() { return SearchBar; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\nvar SearchBar =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(SearchBar, _Component);\n\n  function SearchBar() {\n    var _getPrototypeOf2;\n\n    var _temp, _this;\n\n    _classCallCheck(this, SearchBar);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchBar)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {\n      query: ''\n    }, _this.onSubmit = function (e) {\n      e.preventDefault();\n\n      _this.props.makeQuery(_this.state.query);\n\n      _this.setState({\n        query: ''\n      });\n    }, _this.onChange = function (e) {\n      return _this.setState(_defineProperty({}, e.target.name, e.target.value));\n    }, _temp));\n  }\n\n  _createClass(SearchBar, [{\n    key: \"render\",\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", {\n        onSubmit: this.onSubmit,\n        style: {\n          display: 'flex'\n        }\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"text\",\n        name: \"query\",\n        style: {\n          flex: '10',\n          padding: '5px'\n        },\n        placeholder: \"Ask a question\",\n        value: this.state.query,\n        onChange: this.onChange\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"submit\",\n        value: \"Submit\",\n        className: \"btn\",\n        style: {\n          flex: '1'\n        }\n      }));\n    }\n  }]);\n\n  return SearchBar;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]); // PropTypes\n\nSearchBar.propTypes = {\n  makeQuery: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (SearchBar);\n\n//# sourceURL=webpack:///./frontend/src/components/SearchBar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SearchBar\", function() { return SearchBar; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_bootstrap_lib_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/lib/Button */ \"./node_modules/react-bootstrap/lib/Button.js\");\n/* harmony import */ var react_bootstrap_lib_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_Button__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_bootstrap_lib_ButtonToolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/lib/ButtonToolbar */ \"./node_modules/react-bootstrap/lib/ButtonToolbar.js\");\n/* harmony import */ var react_bootstrap_lib_ButtonToolbar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_lib_ButtonToolbar__WEBPACK_IMPORTED_MODULE_3__);\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\n\n\n\nvar FastButton =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(FastButton, _Component);\n\n  function FastButton() {\n    _classCallCheck(this, FastButton);\n\n    return _possibleConstructorReturn(this, _getPrototypeOf(FastButton).apply(this, arguments));\n  }\n\n  _createClass(FastButton, [{\n    key: \"render\",\n    value: function render() {\n      var _this = this;\n\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_lib_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {\n        onClick: function onClick() {\n          return _this.props.action(_this.props.text);\n        },\n        style: {\n          padding: '7px 10px',\n          margin: '5px',\n          color: '#000'\n        }\n      }, this.props.text);\n    }\n  }]);\n\n  return FastButton;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\nFastButton.propTypes = {\n  text: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,\n  action: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired\n};\nvar SearchBar =\n/*#__PURE__*/\nfunction (_Component2) {\n  _inherits(SearchBar, _Component2);\n\n  function SearchBar() {\n    var _getPrototypeOf2;\n\n    var _temp, _this2;\n\n    _classCallCheck(this, SearchBar);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this2, (_temp = _this2 = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchBar)).call.apply(_getPrototypeOf2, [this].concat(args))), _this2.state = {\n      query: ''\n    }, _this2.onSubmit = function (e) {\n      e.preventDefault();\n\n      _this2.props.makeQuery(_this2.state.query);\n    }, _this2.onChange = function (e) {\n      return _this2.setState(_defineProperty({}, e.target.name, e.target.value));\n    }, _this2.updateQuery = function (q) {\n      return _this2.setState({\n        query: q\n      });\n    }, _this2.updateQueryAndSubmit = function (q) {\n      _this2.updateQuery(q);\n\n      _this2.props.makeQuery(_this2.state.query);\n    }, _temp));\n  }\n\n  _createClass(SearchBar, [{\n    key: \"render\",\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"form\", {\n        onSubmit: this.onSubmit,\n        style: {\n          display: 'flex'\n        }\n      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"text\",\n        name: \"query\",\n        style: {\n          flex: '10',\n          padding: '10px'\n        },\n        placeholder: \"Ask a question(or use template buttons below)\",\n        value: this.state.query,\n        onChange: this.onChange\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"input\", {\n        type: \"submit\",\n        value: \"Submit\",\n        className: \"btn\",\n        style: {\n          flex: '1',\n          padding: '7px 10px',\n          display: 'inline-block',\n          border: 'none',\n          background: '#555',\n          color: '#fff'\n        }\n      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_lib_ButtonToolbar__WEBPACK_IMPORTED_MODULE_3___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Group by Category\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Show teen apps\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Arcade game\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Genres of free apps\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Monetization distribution\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Average ratings for different Category, Type and Genre\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"How do ratings depend on content\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Most popular genres\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Which genres have the highest rating\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Productivity apps by type\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Group by Category and Type and Genre\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"Ratings for different genres in paid segment\",\n        action: this.updateQueryAndSubmit\n      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FastButton, {\n        text: \"All apps\",\n        action: this.updateQueryAndSubmit\n      })));\n    }\n  }]);\n\n  return SearchBar;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]); // PropTypes\n\nSearchBar.propTypes = {\n  makeQuery: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (SearchBar);\n\n//# sourceURL=webpack:///./frontend/src/components/SearchBar.js?");
 
 /***/ }),
 
@@ -134,6 +134,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./frontend/src/components/layout/Header.js":
+/*!**************************************************!*\
+  !*** ./frontend/src/components/layout/Header.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction Header() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"header\", {\n    style: headerStyle\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"Know Your Insights\"));\n}\n\nvar headerStyle = {\n  background: '#333',\n  color: '#fff',\n  textAlign: 'center',\n  padding: '20px'\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./frontend/src/components/layout/Header.js?");
+
+/***/ }),
+
 /***/ "./frontend/src/index.js":
 /*!*******************************!*\
   !*** ./frontend/src/index.js ***!
@@ -143,6 +155,182 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/App */ \"./frontend/src/components/App.js\");\n\n\n//# sourceURL=webpack:///./frontend/src/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ \"./node_modules/core-js/library/fn/object/assign.js\");\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/core-js/object/assign.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ \"./node_modules/core-js/library/fn/object/create.js\");\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/core-js/object/create.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/entries.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/entries.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! core-js/library/fn/object/entries */ \"./node_modules/core-js/library/fn/object/entries.js\");\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/core-js/object/entries.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ \"./node_modules/core-js/library/fn/object/keys.js\");\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/core-js/object/keys.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ \"./node_modules/core-js/library/fn/object/values.js\");\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/core-js/object/values.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function _assertThisInitialized(self) {\n  if (self === void 0) {\n    throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\");\n  }\n\n  return self;\n}\n\nmodule.exports = _assertThisInitialized;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var _Object$assign = __webpack_require__(/*! ../core-js/object/assign */ \"./node_modules/@babel/runtime-corejs2/core-js/object/assign.js\");\n\nfunction _extends() {\n  module.exports = _extends = _Object$assign || function (target) {\n    for (var i = 1; i < arguments.length; i++) {\n      var source = arguments[i];\n\n      for (var key in source) {\n        if (Object.prototype.hasOwnProperty.call(source, key)) {\n          target[key] = source[key];\n        }\n      }\n    }\n\n    return target;\n  };\n\n  return _extends.apply(this, arguments);\n}\n\nmodule.exports = _extends;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/helpers/extends.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var _Object$create = __webpack_require__(/*! ../core-js/object/create */ \"./node_modules/@babel/runtime-corejs2/core-js/object/create.js\");\n\nfunction _inheritsLoose(subClass, superClass) {\n  subClass.prototype = _Object$create(superClass.prototype);\n  subClass.prototype.constructor = subClass;\n  subClass.__proto__ = superClass;\n}\n\nmodule.exports = _inheritsLoose;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : {\n    default: obj\n  };\n}\n\nmodule.exports = _interopRequireDefault;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var _Object$keys = __webpack_require__(/*! ../core-js/object/keys */ \"./node_modules/@babel/runtime-corejs2/core-js/object/keys.js\");\n\nfunction _objectWithoutPropertiesLoose(source, excluded) {\n  if (source == null) return {};\n  var target = {};\n\n  var sourceKeys = _Object$keys(source);\n\n  var key, i;\n\n  for (i = 0; i < sourceKeys.length; i++) {\n    key = sourceKeys[i];\n    if (excluded.indexOf(key) >= 0) continue;\n    target[key] = source[key];\n  }\n\n  return target;\n}\n\nmodule.exports = _objectWithoutPropertiesLoose;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js?");
+
+/***/ }),
+
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n  Copyright (c) 2017 Jed Watson.\n  Licensed under the MIT License (MIT), see\n  http://jedwatson.github.io/classnames\n*/\n/* global define */\n\n(function () {\n\t'use strict';\n\n\tvar hasOwn = {}.hasOwnProperty;\n\n\tfunction classNames () {\n\t\tvar classes = [];\n\n\t\tfor (var i = 0; i < arguments.length; i++) {\n\t\t\tvar arg = arguments[i];\n\t\t\tif (!arg) continue;\n\n\t\t\tvar argType = typeof arg;\n\n\t\t\tif (argType === 'string' || argType === 'number') {\n\t\t\t\tclasses.push(arg);\n\t\t\t} else if (Array.isArray(arg) && arg.length) {\n\t\t\t\tvar inner = classNames.apply(null, arg);\n\t\t\t\tif (inner) {\n\t\t\t\t\tclasses.push(inner);\n\t\t\t\t}\n\t\t\t} else if (argType === 'object') {\n\t\t\t\tfor (var key in arg) {\n\t\t\t\t\tif (hasOwn.call(arg, key) && arg[key]) {\n\t\t\t\t\t\tclasses.push(key);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn classes.join(' ');\n\t}\n\n\tif ( true && module.exports) {\n\t\tclassNames.default = classNames;\n\t\tmodule.exports = classNames;\n\t} else if (true) {\n\t\t// register as 'classnames', consistent with npm package name\n\t\t!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {\n\t\t\treturn classNames;\n\t\t}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\t} else {}\n}());\n\n\n//# sourceURL=webpack:///./node_modules/classnames/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/assign.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/assign.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es6.object.assign */ \"./node_modules/core-js/library/modules/es6.object.assign.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.assign;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/assign.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/create.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/create.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es6.object.create */ \"./node_modules/core-js/library/modules/es6.object.create.js\");\nvar $Object = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object;\nmodule.exports = function create(P, D) {\n  return $Object.create(P, D);\n};\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/create.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/entries.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/entries.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es7.object.entries */ \"./node_modules/core-js/library/modules/es7.object.entries.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.entries;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/entries.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/keys.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/keys.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es6.object.keys */ \"./node_modules/core-js/library/modules/es6.object.keys.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.keys;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/keys.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/values.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/values.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ../../modules/es7.object.values */ \"./node_modules/core-js/library/modules/es7.object.values.js\");\nmodule.exports = __webpack_require__(/*! ../../modules/_core */ \"./node_modules/core-js/library/modules/_core.js\").Object.values;\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/fn/object/values.js?");
 
 /***/ }),
 
@@ -668,6 +856,28 @@ eval("exports.f = {}.propertyIsEnumerable;\n\n\n//# sourceURL=webpack:///./node_
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_object-sap.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-sap.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// most Object methods by ES6 should accept primitives\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\nvar core = __webpack_require__(/*! ./_core */ \"./node_modules/core-js/library/modules/_core.js\");\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/core-js/library/modules/_fails.js\");\nmodule.exports = function (KEY, exec) {\n  var fn = (core.Object || {})[KEY] || Object[KEY];\n  var exp = {};\n  exp[KEY] = exec(fn);\n  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);\n};\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/_object-sap.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_object-to-array.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-to-array.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var getKeys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/core-js/library/modules/_object-keys.js\");\nvar toIObject = __webpack_require__(/*! ./_to-iobject */ \"./node_modules/core-js/library/modules/_to-iobject.js\");\nvar isEnum = __webpack_require__(/*! ./_object-pie */ \"./node_modules/core-js/library/modules/_object-pie.js\").f;\nmodule.exports = function (isEntries) {\n  return function (it) {\n    var O = toIObject(it);\n    var keys = getKeys(O);\n    var length = keys.length;\n    var i = 0;\n    var result = [];\n    var key;\n    while (length > i) if (isEnum.call(O, key = keys[i++])) {\n      result.push(isEntries ? [key, O[key]] : O[key]);\n    } return result;\n  };\n};\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/_object-to-array.js?");
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_property-desc.js":
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_property-desc.js ***!
@@ -880,6 +1090,39 @@ eval("\nvar addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ 
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.3.1 Object.assign(target, source)\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\n\n$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ \"./node_modules/core-js/library/modules/_object-assign.js\") });\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.assign.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\n// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])\n$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ \"./node_modules/core-js/library/modules/_object-create.js\") });\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.create.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// 19.1.2.14 Object.keys(O)\nvar toObject = __webpack_require__(/*! ./_to-object */ \"./node_modules/core-js/library/modules/_to-object.js\");\nvar $keys = __webpack_require__(/*! ./_object-keys */ \"./node_modules/core-js/library/modules/_object-keys.js\");\n\n__webpack_require__(/*! ./_object-sap */ \"./node_modules/core-js/library/modules/_object-sap.js\")('keys', function () {\n  return function keys(it) {\n    return $keys(toObject(it));\n  };\n});\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.object.keys.js?");
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.to-string.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.to-string.js ***!
@@ -900,6 +1143,28 @@ eval("\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.ob
 
 "use strict";
 eval("\nvar each = __webpack_require__(/*! ./_array-methods */ \"./node_modules/core-js/library/modules/_array-methods.js\")(0);\nvar redefine = __webpack_require__(/*! ./_redefine */ \"./node_modules/core-js/library/modules/_redefine.js\");\nvar meta = __webpack_require__(/*! ./_meta */ \"./node_modules/core-js/library/modules/_meta.js\");\nvar assign = __webpack_require__(/*! ./_object-assign */ \"./node_modules/core-js/library/modules/_object-assign.js\");\nvar weak = __webpack_require__(/*! ./_collection-weak */ \"./node_modules/core-js/library/modules/_collection-weak.js\");\nvar isObject = __webpack_require__(/*! ./_is-object */ \"./node_modules/core-js/library/modules/_is-object.js\");\nvar fails = __webpack_require__(/*! ./_fails */ \"./node_modules/core-js/library/modules/_fails.js\");\nvar validate = __webpack_require__(/*! ./_validate-collection */ \"./node_modules/core-js/library/modules/_validate-collection.js\");\nvar WEAK_MAP = 'WeakMap';\nvar getWeak = meta.getWeak;\nvar isExtensible = Object.isExtensible;\nvar uncaughtFrozenStore = weak.ufstore;\nvar tmp = {};\nvar InternalMap;\n\nvar wrapper = function (get) {\n  return function WeakMap() {\n    return get(this, arguments.length > 0 ? arguments[0] : undefined);\n  };\n};\n\nvar methods = {\n  // 23.3.3.3 WeakMap.prototype.get(key)\n  get: function get(key) {\n    if (isObject(key)) {\n      var data = getWeak(key);\n      if (data === true) return uncaughtFrozenStore(validate(this, WEAK_MAP)).get(key);\n      return data ? data[this._i] : undefined;\n    }\n  },\n  // 23.3.3.5 WeakMap.prototype.set(key, value)\n  set: function set(key, value) {\n    return weak.def(validate(this, WEAK_MAP), key, value);\n  }\n};\n\n// 23.3 WeakMap Objects\nvar $WeakMap = module.exports = __webpack_require__(/*! ./_collection */ \"./node_modules/core-js/library/modules/_collection.js\")(WEAK_MAP, wrapper, methods, weak, true, true);\n\n// IE11 WeakMap frozen keys fix\nif (fails(function () { return new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7; })) {\n  InternalMap = weak.getConstructor(wrapper, WEAK_MAP);\n  assign(InternalMap.prototype, methods);\n  meta.NEED = true;\n  each(['delete', 'has', 'get', 'set'], function (key) {\n    var proto = $WeakMap.prototype;\n    var method = proto[key];\n    redefine(proto, key, function (a, b) {\n      // store frozen objects on internal weakmap shim\n      if (isObject(a) && !isExtensible(a)) {\n        if (!this._f) this._f = new InternalMap();\n        var result = this._f[key](a, b);\n        return key == 'set' ? this : result;\n      // store all the rest on native weakmap\n      } return method.call(this, a, b);\n    });\n  });\n}\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es6.weak-map.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.object.entries.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.object.entries.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// https://github.com/tc39/proposal-object-values-entries\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\nvar $entries = __webpack_require__(/*! ./_object-to-array */ \"./node_modules/core-js/library/modules/_object-to-array.js\")(true);\n\n$export($export.S, 'Object', {\n  entries: function entries(it) {\n    return $entries(it);\n  }\n});\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es7.object.entries.js?");
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.object.values.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.object.values.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// https://github.com/tc39/proposal-object-values-entries\nvar $export = __webpack_require__(/*! ./_export */ \"./node_modules/core-js/library/modules/_export.js\");\nvar $values = __webpack_require__(/*! ./_object-to-array */ \"./node_modules/core-js/library/modules/_object-to-array.js\")(false);\n\n$export($export.S, 'Object', {\n  values: function values(it) {\n    return $values(it);\n  }\n});\n\n\n//# sourceURL=webpack:///./node_modules/core-js/library/modules/es7.object.values.js?");
 
 /***/ }),
 
@@ -936,6 +1201,18 @@ eval("__webpack_require__(/*! ./es6.array.iterator */ \"./node_modules/core-js/l
 
 /***/ }),
 
+/***/ "./node_modules/invariant/browser.js":
+/*!*******************************************!*\
+  !*** ./node_modules/invariant/browser.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n\n\n/**\n * Use invariant() to assert state which your program assumes to be true.\n *\n * Provide sprintf-style format (only %s is supported) and arguments\n * to provide information about what broke and what you were\n * expecting.\n *\n * The invariant message will be stripped in production, but the invariant\n * will remain to ensure logic does not differ in production.\n */\n\nvar invariant = function(condition, format, a, b, c, d, e, f) {\n  if (true) {\n    if (format === undefined) {\n      throw new Error('invariant requires an error message argument');\n    }\n  }\n\n  if (!condition) {\n    var error;\n    if (format === undefined) {\n      error = new Error(\n        'Minified exception occurred; use the non-minified dev environment ' +\n        'for the full error message and additional helpful warnings.'\n      );\n    } else {\n      var args = [a, b, c, d, e, f];\n      var argIndex = 0;\n      error = new Error(\n        format.replace(/%s/g, function() { return args[argIndex++]; })\n      );\n      error.name = 'Invariant Violation';\n    }\n\n    error.framesToPop = 1; // we don't care about invariant's own frame\n    throw error;\n  }\n};\n\nmodule.exports = invariant;\n\n\n//# sourceURL=webpack:///./node_modules/invariant/browser.js?");
+
+/***/ }),
+
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -945,6 +1222,30 @@ eval("__webpack_require__(/*! ./es6.array.iterator */ \"./node_modules/core-js/l
 
 "use strict";
 eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disable no-unused-vars */\nvar getOwnPropertySymbols = Object.getOwnPropertySymbols;\nvar hasOwnProperty = Object.prototype.hasOwnProperty;\nvar propIsEnumerable = Object.prototype.propertyIsEnumerable;\n\nfunction toObject(val) {\n\tif (val === null || val === undefined) {\n\t\tthrow new TypeError('Object.assign cannot be called with null or undefined');\n\t}\n\n\treturn Object(val);\n}\n\nfunction shouldUseNative() {\n\ttry {\n\t\tif (!Object.assign) {\n\t\t\treturn false;\n\t\t}\n\n\t\t// Detect buggy property enumeration order in older V8 versions.\n\n\t\t// https://bugs.chromium.org/p/v8/issues/detail?id=4118\n\t\tvar test1 = new String('abc');  // eslint-disable-line no-new-wrappers\n\t\ttest1[5] = 'de';\n\t\tif (Object.getOwnPropertyNames(test1)[0] === '5') {\n\t\t\treturn false;\n\t\t}\n\n\t\t// https://bugs.chromium.org/p/v8/issues/detail?id=3056\n\t\tvar test2 = {};\n\t\tfor (var i = 0; i < 10; i++) {\n\t\t\ttest2['_' + String.fromCharCode(i)] = i;\n\t\t}\n\t\tvar order2 = Object.getOwnPropertyNames(test2).map(function (n) {\n\t\t\treturn test2[n];\n\t\t});\n\t\tif (order2.join('') !== '0123456789') {\n\t\t\treturn false;\n\t\t}\n\n\t\t// https://bugs.chromium.org/p/v8/issues/detail?id=3056\n\t\tvar test3 = {};\n\t\t'abcdefghijklmnopqrst'.split('').forEach(function (letter) {\n\t\t\ttest3[letter] = letter;\n\t\t});\n\t\tif (Object.keys(Object.assign({}, test3)).join('') !==\n\t\t\t\t'abcdefghijklmnopqrst') {\n\t\t\treturn false;\n\t\t}\n\n\t\treturn true;\n\t} catch (err) {\n\t\t// We don't expect any of the above to throw, but better to be safe.\n\t\treturn false;\n\t}\n}\n\nmodule.exports = shouldUseNative() ? Object.assign : function (target, source) {\n\tvar from;\n\tvar to = toObject(target);\n\tvar symbols;\n\n\tfor (var s = 1; s < arguments.length; s++) {\n\t\tfrom = Object(arguments[s]);\n\n\t\tfor (var key in from) {\n\t\t\tif (hasOwnProperty.call(from, key)) {\n\t\t\t\tto[key] = from[key];\n\t\t\t}\n\t\t}\n\n\t\tif (getOwnPropertySymbols) {\n\t\t\tsymbols = getOwnPropertySymbols(from);\n\t\t\tfor (var i = 0; i < symbols.length; i++) {\n\t\t\t\tif (propIsEnumerable.call(from, symbols[i])) {\n\t\t\t\t\tto[symbols[i]] = from[symbols[i]];\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\treturn to;\n};\n\n\n//# sourceURL=webpack:///./node_modules/object-assign/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/prop-types-extra/lib/elementType.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/prop-types-extra/lib/elementType.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactIs = __webpack_require__(/*! react-is */ \"./node_modules/react-is/index.js\");\n\nvar _createChainableTypeChecker = __webpack_require__(/*! ./utils/createChainableTypeChecker */ \"./node_modules/prop-types-extra/lib/utils/createChainableTypeChecker.js\");\n\nvar _createChainableTypeChecker2 = _interopRequireDefault(_createChainableTypeChecker);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction elementType(props, propName, componentName, location, propFullName) {\n  var propValue = props[propName];\n\n  if (_react2.default.isValidElement(propValue)) {\n    return new Error('Invalid ' + location + ' `' + propFullName + '` of type ReactElement ' + ('supplied to `' + componentName + '`,expected an element type (a string ') + ', component class, or function component).');\n  }\n\n  if (!(0, _reactIs.isValidElementType)(propValue)) {\n    return new Error('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected an element type (a string ') + ', component class, or function component).');\n  }\n\n  return null;\n}\n\nexports.default = (0, _createChainableTypeChecker2.default)(elementType);\nmodule.exports = exports['default'];\n\n//# sourceURL=webpack:///./node_modules/prop-types-extra/lib/elementType.js?");
+
+/***/ }),
+
+/***/ "./node_modules/prop-types-extra/lib/utils/createChainableTypeChecker.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/prop-types-extra/lib/utils/createChainableTypeChecker.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = createChainableTypeChecker;\n/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n */\n\n// Mostly taken from ReactPropTypes.\n\nfunction createChainableTypeChecker(validate) {\n  function checkType(isRequired, props, propName, componentName, location, propFullName) {\n    var componentNameSafe = componentName || '<<anonymous>>';\n    var propFullNameSafe = propFullName || propName;\n\n    if (props[propName] == null) {\n      if (isRequired) {\n        return new Error('Required ' + location + ' `' + propFullNameSafe + '` was not specified ' + ('in `' + componentNameSafe + '`.'));\n      }\n\n      return null;\n    }\n\n    for (var _len = arguments.length, args = Array(_len > 6 ? _len - 6 : 0), _key = 6; _key < _len; _key++) {\n      args[_key - 6] = arguments[_key];\n    }\n\n    return validate.apply(undefined, [props, propName, componentNameSafe, location, propFullNameSafe].concat(args));\n  }\n\n  var chainedCheckType = checkType.bind(null, false);\n  chainedCheckType.isRequired = checkType.bind(null, true);\n\n  return chainedCheckType;\n}\nmodule.exports = exports['default'];\n\n//# sourceURL=webpack:///./node_modules/prop-types-extra/lib/utils/createChainableTypeChecker.js?");
 
 /***/ }),
 
@@ -995,6 +1296,78 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
 
 /***/ }),
 
+/***/ "./node_modules/react-bootstrap/lib/Button.js":
+/*!****************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/Button.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js\");\n\nexports.__esModule = true;\nexports.default = void 0;\n\nvar _values = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ \"./node_modules/@babel/runtime-corejs2/core-js/object/values.js\"));\n\nvar _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js\"));\n\nvar _extends3 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ \"./node_modules/@babel/runtime-corejs2/helpers/extends.js\"));\n\nvar _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inheritsLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js\"));\n\nvar _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ \"./node_modules/classnames/index.js\"));\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\"));\n\nvar _elementType = _interopRequireDefault(__webpack_require__(/*! prop-types-extra/lib/elementType */ \"./node_modules/prop-types-extra/lib/elementType.js\"));\n\nvar _bootstrapUtils = __webpack_require__(/*! ./utils/bootstrapUtils */ \"./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js\");\n\nvar _StyleConfig = __webpack_require__(/*! ./utils/StyleConfig */ \"./node_modules/react-bootstrap/lib/utils/StyleConfig.js\");\n\nvar _SafeAnchor = _interopRequireDefault(__webpack_require__(/*! ./SafeAnchor */ \"./node_modules/react-bootstrap/lib/SafeAnchor.js\"));\n\nvar propTypes = {\n  active: _propTypes.default.bool,\n  disabled: _propTypes.default.bool,\n  block: _propTypes.default.bool,\n  onClick: _propTypes.default.func,\n  componentClass: _elementType.default,\n  href: _propTypes.default.string,\n\n  /**\n   * Defines HTML button type attribute\n   * @defaultValue 'button'\n   */\n  type: _propTypes.default.oneOf(['button', 'reset', 'submit'])\n};\nvar defaultProps = {\n  active: false,\n  block: false,\n  disabled: false\n};\n\nvar Button =\n/*#__PURE__*/\nfunction (_React$Component) {\n  (0, _inheritsLoose2.default)(Button, _React$Component);\n\n  function Button() {\n    return _React$Component.apply(this, arguments) || this;\n  }\n\n  var _proto = Button.prototype;\n\n  _proto.renderAnchor = function renderAnchor(elementProps, className) {\n    return _react.default.createElement(_SafeAnchor.default, (0, _extends3.default)({}, elementProps, {\n      className: (0, _classnames.default)(className, elementProps.disabled && 'disabled')\n    }));\n  };\n\n  _proto.renderButton = function renderButton(_ref, className) {\n    var componentClass = _ref.componentClass,\n        elementProps = (0, _objectWithoutPropertiesLoose2.default)(_ref, [\"componentClass\"]);\n    var Component = componentClass || 'button';\n    return _react.default.createElement(Component, (0, _extends3.default)({}, elementProps, {\n      type: elementProps.type || 'button',\n      className: className\n    }));\n  };\n\n  _proto.render = function render() {\n    var _extends2;\n\n    var _this$props = this.props,\n        active = _this$props.active,\n        block = _this$props.block,\n        className = _this$props.className,\n        props = (0, _objectWithoutPropertiesLoose2.default)(_this$props, [\"active\", \"block\", \"className\"]);\n\n    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),\n        bsProps = _splitBsProps[0],\n        elementProps = _splitBsProps[1];\n\n    var classes = (0, _extends3.default)({}, (0, _bootstrapUtils.getClassSet)(bsProps), (_extends2 = {\n      active: active\n    }, _extends2[(0, _bootstrapUtils.prefix)(bsProps, 'block')] = block, _extends2));\n    var fullClassName = (0, _classnames.default)(className, classes);\n\n    if (elementProps.href) {\n      return this.renderAnchor(elementProps, fullClassName);\n    }\n\n    return this.renderButton(elementProps, fullClassName);\n  };\n\n  return Button;\n}(_react.default.Component);\n\nButton.propTypes = propTypes;\nButton.defaultProps = defaultProps;\n\nvar _default = (0, _bootstrapUtils.bsClass)('btn', (0, _bootstrapUtils.bsSizes)([_StyleConfig.Size.LARGE, _StyleConfig.Size.SMALL, _StyleConfig.Size.XSMALL], (0, _bootstrapUtils.bsStyles)((0, _values.default)(_StyleConfig.State).concat([_StyleConfig.Style.DEFAULT, _StyleConfig.Style.PRIMARY, _StyleConfig.Style.LINK]), _StyleConfig.Style.DEFAULT, Button)));\n\nexports.default = _default;\nmodule.exports = exports[\"default\"];\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/Button.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/lib/ButtonToolbar.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/ButtonToolbar.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js\");\n\nexports.__esModule = true;\nexports.default = void 0;\n\nvar _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ \"./node_modules/@babel/runtime-corejs2/helpers/extends.js\"));\n\nvar _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js\"));\n\nvar _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inheritsLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js\"));\n\nvar _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ \"./node_modules/classnames/index.js\"));\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _bootstrapUtils = __webpack_require__(/*! ./utils/bootstrapUtils */ \"./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js\");\n\nvar ButtonToolbar =\n/*#__PURE__*/\nfunction (_React$Component) {\n  (0, _inheritsLoose2.default)(ButtonToolbar, _React$Component);\n\n  function ButtonToolbar() {\n    return _React$Component.apply(this, arguments) || this;\n  }\n\n  var _proto = ButtonToolbar.prototype;\n\n  _proto.render = function render() {\n    var _this$props = this.props,\n        className = _this$props.className,\n        props = (0, _objectWithoutPropertiesLoose2.default)(_this$props, [\"className\"]);\n\n    var _splitBsProps = (0, _bootstrapUtils.splitBsProps)(props),\n        bsProps = _splitBsProps[0],\n        elementProps = _splitBsProps[1];\n\n    var classes = (0, _bootstrapUtils.getClassSet)(bsProps);\n    return _react.default.createElement(\"div\", (0, _extends2.default)({}, elementProps, {\n      role: \"toolbar\",\n      className: (0, _classnames.default)(className, classes)\n    }));\n  };\n\n  return ButtonToolbar;\n}(_react.default.Component);\n\nvar _default = (0, _bootstrapUtils.bsClass)('btn-toolbar', ButtonToolbar);\n\nexports.default = _default;\nmodule.exports = exports[\"default\"];\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/ButtonToolbar.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/lib/SafeAnchor.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/SafeAnchor.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js\");\n\nexports.__esModule = true;\nexports.default = void 0;\n\nvar _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ \"./node_modules/@babel/runtime-corejs2/helpers/extends.js\"));\n\nvar _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/objectWithoutPropertiesLoose.js\"));\n\nvar _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inheritsLoose */ \"./node_modules/@babel/runtime-corejs2/helpers/inheritsLoose.js\"));\n\nvar _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/assertThisInitialized */ \"./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js\"));\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n\nvar _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\"));\n\nvar _elementType = _interopRequireDefault(__webpack_require__(/*! prop-types-extra/lib/elementType */ \"./node_modules/prop-types-extra/lib/elementType.js\"));\n\nvar _createChainedFunction = _interopRequireDefault(__webpack_require__(/*! ./utils/createChainedFunction */ \"./node_modules/react-bootstrap/lib/utils/createChainedFunction.js\"));\n\nvar propTypes = {\n  href: _propTypes.default.string,\n  onClick: _propTypes.default.func,\n  onKeyDown: _propTypes.default.func,\n  disabled: _propTypes.default.bool,\n  role: _propTypes.default.string,\n  tabIndex: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),\n\n  /**\n   * this is sort of silly but needed for Button\n   */\n  componentClass: _elementType.default\n};\nvar defaultProps = {\n  componentClass: 'a'\n};\n\nfunction isTrivialHref(href) {\n  return !href || href.trim() === '#';\n}\n/**\n * There are situations due to browser quirks or Bootstrap CSS where\n * an anchor tag is needed, when semantically a button tag is the\n * better choice. SafeAnchor ensures that when an anchor is used like a\n * button its accessible. It also emulates input `disabled` behavior for\n * links, which is usually desirable for Buttons, NavItems, MenuItems, etc.\n */\n\n\nvar SafeAnchor =\n/*#__PURE__*/\nfunction (_React$Component) {\n  (0, _inheritsLoose2.default)(SafeAnchor, _React$Component);\n\n  function SafeAnchor(props, context) {\n    var _this;\n\n    _this = _React$Component.call(this, props, context) || this;\n    _this.handleClick = _this.handleClick.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));\n    _this.handleKeyDown = _this.handleKeyDown.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));\n    return _this;\n  }\n\n  var _proto = SafeAnchor.prototype;\n\n  _proto.handleClick = function handleClick(event) {\n    var _this$props = this.props,\n        disabled = _this$props.disabled,\n        href = _this$props.href,\n        onClick = _this$props.onClick;\n\n    if (disabled || isTrivialHref(href)) {\n      event.preventDefault();\n    }\n\n    if (disabled) {\n      event.stopPropagation();\n      return;\n    }\n\n    if (onClick) {\n      onClick(event);\n    }\n  };\n\n  _proto.handleKeyDown = function handleKeyDown(event) {\n    if (event.key === ' ') {\n      event.preventDefault();\n      this.handleClick(event);\n    }\n  };\n\n  _proto.render = function render() {\n    var _this$props2 = this.props,\n        Component = _this$props2.componentClass,\n        disabled = _this$props2.disabled,\n        onKeyDown = _this$props2.onKeyDown,\n        props = (0, _objectWithoutPropertiesLoose2.default)(_this$props2, [\"componentClass\", \"disabled\", \"onKeyDown\"]);\n\n    if (isTrivialHref(props.href)) {\n      props.role = props.role || 'button'; // we want to make sure there is a href attribute on the node\n      // otherwise, the cursor incorrectly styled (except with role='button')\n\n      props.href = props.href || '#';\n    }\n\n    if (disabled) {\n      props.tabIndex = -1;\n      props.style = (0, _extends2.default)({\n        pointerEvents: 'none'\n      }, props.style);\n    }\n\n    return _react.default.createElement(Component, (0, _extends2.default)({}, props, {\n      onClick: this.handleClick,\n      onKeyDown: (0, _createChainedFunction.default)(this.handleKeyDown, onKeyDown)\n    }));\n  };\n\n  return SafeAnchor;\n}(_react.default.Component);\n\nSafeAnchor.propTypes = propTypes;\nSafeAnchor.defaultProps = defaultProps;\nvar _default = SafeAnchor;\nexports.default = _default;\nmodule.exports = exports[\"default\"];\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/SafeAnchor.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/lib/utils/StyleConfig.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/utils/StyleConfig.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.Style = exports.State = exports.DEVICE_SIZES = exports.SIZE_MAP = exports.Size = void 0;\nvar Size = {\n  LARGE: 'large',\n  SMALL: 'small',\n  XSMALL: 'xsmall'\n};\nexports.Size = Size;\nvar SIZE_MAP = {\n  large: 'lg',\n  medium: 'md',\n  small: 'sm',\n  xsmall: 'xs',\n  lg: 'lg',\n  md: 'md',\n  sm: 'sm',\n  xs: 'xs'\n};\nexports.SIZE_MAP = SIZE_MAP;\nvar DEVICE_SIZES = ['lg', 'md', 'sm', 'xs'];\nexports.DEVICE_SIZES = DEVICE_SIZES;\nvar State = {\n  SUCCESS: 'success',\n  WARNING: 'warning',\n  DANGER: 'danger',\n  INFO: 'info'\n};\nexports.State = State;\nvar Style = {\n  DEFAULT: 'default',\n  PRIMARY: 'primary',\n  LINK: 'link',\n  INVERSE: 'inverse'\n};\nexports.Style = Style;\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/utils/StyleConfig.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ \"./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js\");\n\nexports.__esModule = true;\nexports.prefix = prefix;\nexports.getClassSet = getClassSet;\nexports.splitBsProps = splitBsProps;\nexports.splitBsPropsAndOmit = splitBsPropsAndOmit;\nexports.addStyle = addStyle;\nexports._curry = exports.bsSizes = exports.bsStyles = exports.bsClass = void 0;\n\nvar _entries = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/entries */ \"./node_modules/@babel/runtime-corejs2/core-js/object/entries.js\"));\n\nvar _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ \"./node_modules/@babel/runtime-corejs2/helpers/extends.js\"));\n\nvar _invariant = _interopRequireDefault(__webpack_require__(/*! invariant */ \"./node_modules/invariant/browser.js\"));\n\nvar _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\"));\n\nvar _StyleConfig = __webpack_require__(/*! ./StyleConfig */ \"./node_modules/react-bootstrap/lib/utils/StyleConfig.js\");\n\n// TODO: The publicly exposed parts of this should be in lib/BootstrapUtils.\nfunction curry(fn) {\n  return function () {\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    var last = args[args.length - 1];\n\n    if (typeof last === 'function') {\n      return fn.apply(void 0, args);\n    }\n\n    return function (Component) {\n      return fn.apply(void 0, args.concat([Component]));\n    };\n  };\n}\n\nfunction prefix(props, variant) {\n  var bsClass = (props.bsClass || '').trim();\n  !(bsClass != null) ?  true ? (0, _invariant.default)(false, 'A `bsClass` prop is required for this component') : undefined : void 0;\n  return bsClass + (variant ? \"-\" + variant : '');\n}\n\nvar bsClass = curry(function (defaultClass, Component) {\n  var propTypes = Component.propTypes || (Component.propTypes = {});\n  var defaultProps = Component.defaultProps || (Component.defaultProps = {});\n  propTypes.bsClass = _propTypes.default.string;\n  defaultProps.bsClass = defaultClass;\n  return Component;\n});\nexports.bsClass = bsClass;\nvar bsStyles = curry(function (styles, defaultStyle, Component) {\n  if (typeof defaultStyle !== 'string') {\n    Component = defaultStyle;\n    defaultStyle = undefined;\n  }\n\n  var existing = Component.STYLES || [];\n  var propTypes = Component.propTypes || {};\n  styles.forEach(function (style) {\n    if (existing.indexOf(style) === -1) {\n      existing.push(style);\n    }\n  });\n\n  var propType = _propTypes.default.oneOf(existing); // expose the values on the propType function for documentation\n\n\n  Component.STYLES = existing;\n  propType._values = existing;\n  Component.propTypes = (0, _extends2.default)({}, propTypes, {\n    bsStyle: propType\n  });\n\n  if (defaultStyle !== undefined) {\n    var defaultProps = Component.defaultProps || (Component.defaultProps = {});\n    defaultProps.bsStyle = defaultStyle;\n  }\n\n  return Component;\n});\nexports.bsStyles = bsStyles;\nvar bsSizes = curry(function (sizes, defaultSize, Component) {\n  if (typeof defaultSize !== 'string') {\n    Component = defaultSize;\n    defaultSize = undefined;\n  }\n\n  var existing = Component.SIZES || [];\n  var propTypes = Component.propTypes || {};\n  sizes.forEach(function (size) {\n    if (existing.indexOf(size) === -1) {\n      existing.push(size);\n    }\n  });\n  var values = [];\n  existing.forEach(function (size) {\n    var mappedSize = _StyleConfig.SIZE_MAP[size];\n\n    if (mappedSize && mappedSize !== size) {\n      values.push(mappedSize);\n    }\n\n    values.push(size);\n  });\n\n  var propType = _propTypes.default.oneOf(values);\n\n  propType._values = values; // expose the values on the propType function for documentation\n\n  Component.SIZES = existing;\n  Component.propTypes = (0, _extends2.default)({}, propTypes, {\n    bsSize: propType\n  });\n\n  if (defaultSize !== undefined) {\n    if (!Component.defaultProps) {\n      Component.defaultProps = {};\n    }\n\n    Component.defaultProps.bsSize = defaultSize;\n  }\n\n  return Component;\n});\nexports.bsSizes = bsSizes;\n\nfunction getClassSet(props) {\n  var _classes;\n\n  var classes = (_classes = {}, _classes[prefix(props)] = true, _classes);\n\n  if (props.bsSize) {\n    var bsSize = _StyleConfig.SIZE_MAP[props.bsSize] || props.bsSize;\n    classes[prefix(props, bsSize)] = true;\n  }\n\n  if (props.bsStyle) {\n    classes[prefix(props, props.bsStyle)] = true;\n  }\n\n  return classes;\n}\n\nfunction getBsProps(props) {\n  return {\n    bsClass: props.bsClass,\n    bsSize: props.bsSize,\n    bsStyle: props.bsStyle,\n    bsRole: props.bsRole\n  };\n}\n\nfunction isBsProp(propName) {\n  return propName === 'bsClass' || propName === 'bsSize' || propName === 'bsStyle' || propName === 'bsRole';\n}\n\nfunction splitBsProps(props) {\n  var elementProps = {};\n  (0, _entries.default)(props).forEach(function (_ref) {\n    var propName = _ref[0],\n        propValue = _ref[1];\n\n    if (!isBsProp(propName)) {\n      elementProps[propName] = propValue;\n    }\n  });\n  return [getBsProps(props), elementProps];\n}\n\nfunction splitBsPropsAndOmit(props, omittedPropNames) {\n  var isOmittedProp = {};\n  omittedPropNames.forEach(function (propName) {\n    isOmittedProp[propName] = true;\n  });\n  var elementProps = {};\n  (0, _entries.default)(props).forEach(function (_ref2) {\n    var propName = _ref2[0],\n        propValue = _ref2[1];\n\n    if (!isBsProp(propName) && !isOmittedProp[propName]) {\n      elementProps[propName] = propValue;\n    }\n  });\n  return [getBsProps(props), elementProps];\n}\n/**\n * Add a style variant to a Component. Mutates the propTypes of the component\n * in order to validate the new variant.\n */\n\n\nfunction addStyle(Component) {\n  for (var _len2 = arguments.length, styleVariant = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {\n    styleVariant[_key2 - 1] = arguments[_key2];\n  }\n\n  bsStyles(styleVariant, Component);\n}\n\nvar _curry = curry;\nexports._curry = _curry;\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/utils/bootstrapUtils.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/lib/utils/createChainedFunction.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/react-bootstrap/lib/utils/createChainedFunction.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nexports.__esModule = true;\nexports.default = void 0;\n\n/**\n * Safe chained function\n *\n * Will only create a new function if needed,\n * otherwise will pass back existing functions or null.\n *\n * @param {function} functions to chain\n * @returns {function|null}\n */\nfunction createChainedFunction() {\n  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {\n    funcs[_key] = arguments[_key];\n  }\n\n  return funcs.filter(function (f) {\n    return f != null;\n  }).reduce(function (acc, f) {\n    if (typeof f !== 'function') {\n      throw new Error('Invalid Argument Type, must only provide functions, undefined, or null.');\n    }\n\n    if (acc === null) {\n      return f;\n    }\n\n    return function chainedFunction() {\n      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {\n        args[_key2] = arguments[_key2];\n      }\n\n      acc.apply(this, args);\n      f.apply(this, args);\n    };\n  }, null);\n}\n\nvar _default = createChainedFunction;\nexports.default = _default;\nmodule.exports = exports[\"default\"];\n\n//# sourceURL=webpack:///./node_modules/react-bootstrap/lib/utils/createChainedFunction.js?");
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/cjs/react-dom.development.js":
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
@@ -1016,6 +1389,30 @@ eval("/** @license React v16.7.0\n * react-dom.development.js\n *\n * Copyright 
 
 "use strict";
 eval("\n\nfunction checkDCE() {\n  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */\n  if (\n    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||\n    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'\n  ) {\n    return;\n  }\n  if (true) {\n    // This branch is unreachable because this function is only called\n    // in production, but the condition is true only in development.\n    // Therefore if the branch is still here, dead code elimination wasn't\n    // properly applied.\n    // Don't change the message. React DevTools relies on it. Also make sure\n    // this message doesn't occur elsewhere in this function, or it will cause\n    // a false positive.\n    throw new Error('^_^');\n  }\n  try {\n    // Verify that the code above has been dead code eliminated (DCE'd).\n    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);\n  } catch (err) {\n    // DevTools shouldn't crash React, no matter what.\n    // We should still report in case we break this code.\n    console.error(err);\n  }\n}\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react-dom.development.js */ \"./node_modules/react-dom/cjs/react-dom.development.js\");\n}\n\n\n//# sourceURL=webpack:///./node_modules/react-dom/index.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/** @license React v16.7.0\n * react-is.development.js\n *\n * Copyright (c) Facebook, Inc. and its affiliates.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n\n\n\n\nif (true) {\n  (function() {\n'use strict';\n\nObject.defineProperty(exports, '__esModule', { value: true });\n\n// The Symbol used to tag the ReactElement-like types. If there is no native Symbol\n// nor polyfill, then a plain number is used for performance.\nvar hasSymbol = typeof Symbol === 'function' && Symbol.for;\n\nvar REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;\nvar REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;\nvar REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;\nvar REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;\nvar REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;\nvar REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;\nvar REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;\nvar REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;\nvar REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;\nvar REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;\nvar REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;\nvar REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;\nvar REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;\n\nfunction isValidElementType(type) {\n  return typeof type === 'string' || typeof type === 'function' ||\n  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.\n  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);\n}\n\n/**\n * Forked from fbjs/warning:\n * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js\n *\n * Only change is we use console.warn instead of console.error,\n * and do nothing when 'console' is not supported.\n * This really simplifies the code.\n * ---\n * Similar to invariant but only logs a warning if the condition is not met.\n * This can be used to log issues in development environments in critical\n * paths. Removing the logging code for production environments will keep the\n * same logic and follow the same code paths.\n */\n\nvar lowPriorityWarning = function () {};\n\n{\n  var printWarning = function (format) {\n    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {\n      args[_key - 1] = arguments[_key];\n    }\n\n    var argIndex = 0;\n    var message = 'Warning: ' + format.replace(/%s/g, function () {\n      return args[argIndex++];\n    });\n    if (typeof console !== 'undefined') {\n      console.warn(message);\n    }\n    try {\n      // --- Welcome to debugging React ---\n      // This error was thrown as a convenience so that you can use this stack\n      // to find the callsite that caused this warning to fire.\n      throw new Error(message);\n    } catch (x) {}\n  };\n\n  lowPriorityWarning = function (condition, format) {\n    if (format === undefined) {\n      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');\n    }\n    if (!condition) {\n      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {\n        args[_key2 - 2] = arguments[_key2];\n      }\n\n      printWarning.apply(undefined, [format].concat(args));\n    }\n  };\n}\n\nvar lowPriorityWarning$1 = lowPriorityWarning;\n\nfunction typeOf(object) {\n  if (typeof object === 'object' && object !== null) {\n    var $$typeof = object.$$typeof;\n    switch ($$typeof) {\n      case REACT_ELEMENT_TYPE:\n        var type = object.type;\n\n        switch (type) {\n          case REACT_ASYNC_MODE_TYPE:\n          case REACT_CONCURRENT_MODE_TYPE:\n          case REACT_FRAGMENT_TYPE:\n          case REACT_PROFILER_TYPE:\n          case REACT_STRICT_MODE_TYPE:\n          case REACT_SUSPENSE_TYPE:\n            return type;\n          default:\n            var $$typeofType = type && type.$$typeof;\n\n            switch ($$typeofType) {\n              case REACT_CONTEXT_TYPE:\n              case REACT_FORWARD_REF_TYPE:\n              case REACT_PROVIDER_TYPE:\n                return $$typeofType;\n              default:\n                return $$typeof;\n            }\n        }\n      case REACT_LAZY_TYPE:\n      case REACT_MEMO_TYPE:\n      case REACT_PORTAL_TYPE:\n        return $$typeof;\n    }\n  }\n\n  return undefined;\n}\n\n// AsyncMode is deprecated along with isAsyncMode\nvar AsyncMode = REACT_ASYNC_MODE_TYPE;\nvar ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;\nvar ContextConsumer = REACT_CONTEXT_TYPE;\nvar ContextProvider = REACT_PROVIDER_TYPE;\nvar Element = REACT_ELEMENT_TYPE;\nvar ForwardRef = REACT_FORWARD_REF_TYPE;\nvar Fragment = REACT_FRAGMENT_TYPE;\nvar Lazy = REACT_LAZY_TYPE;\nvar Memo = REACT_MEMO_TYPE;\nvar Portal = REACT_PORTAL_TYPE;\nvar Profiler = REACT_PROFILER_TYPE;\nvar StrictMode = REACT_STRICT_MODE_TYPE;\nvar Suspense = REACT_SUSPENSE_TYPE;\n\nvar hasWarnedAboutDeprecatedIsAsyncMode = false;\n\n// AsyncMode should be deprecated\nfunction isAsyncMode(object) {\n  {\n    if (!hasWarnedAboutDeprecatedIsAsyncMode) {\n      hasWarnedAboutDeprecatedIsAsyncMode = true;\n      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');\n    }\n  }\n  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;\n}\nfunction isConcurrentMode(object) {\n  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;\n}\nfunction isContextConsumer(object) {\n  return typeOf(object) === REACT_CONTEXT_TYPE;\n}\nfunction isContextProvider(object) {\n  return typeOf(object) === REACT_PROVIDER_TYPE;\n}\nfunction isElement(object) {\n  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;\n}\nfunction isForwardRef(object) {\n  return typeOf(object) === REACT_FORWARD_REF_TYPE;\n}\nfunction isFragment(object) {\n  return typeOf(object) === REACT_FRAGMENT_TYPE;\n}\nfunction isLazy(object) {\n  return typeOf(object) === REACT_LAZY_TYPE;\n}\nfunction isMemo(object) {\n  return typeOf(object) === REACT_MEMO_TYPE;\n}\nfunction isPortal(object) {\n  return typeOf(object) === REACT_PORTAL_TYPE;\n}\nfunction isProfiler(object) {\n  return typeOf(object) === REACT_PROFILER_TYPE;\n}\nfunction isStrictMode(object) {\n  return typeOf(object) === REACT_STRICT_MODE_TYPE;\n}\nfunction isSuspense(object) {\n  return typeOf(object) === REACT_SUSPENSE_TYPE;\n}\n\nexports.typeOf = typeOf;\nexports.AsyncMode = AsyncMode;\nexports.ConcurrentMode = ConcurrentMode;\nexports.ContextConsumer = ContextConsumer;\nexports.ContextProvider = ContextProvider;\nexports.Element = Element;\nexports.ForwardRef = ForwardRef;\nexports.Fragment = Fragment;\nexports.Lazy = Lazy;\nexports.Memo = Memo;\nexports.Portal = Portal;\nexports.Profiler = Profiler;\nexports.StrictMode = StrictMode;\nexports.Suspense = Suspense;\nexports.isValidElementType = isValidElementType;\nexports.isAsyncMode = isAsyncMode;\nexports.isConcurrentMode = isConcurrentMode;\nexports.isContextConsumer = isContextConsumer;\nexports.isContextProvider = isContextProvider;\nexports.isElement = isElement;\nexports.isForwardRef = isForwardRef;\nexports.isFragment = isFragment;\nexports.isLazy = isLazy;\nexports.isMemo = isMemo;\nexports.isPortal = isPortal;\nexports.isProfiler = isProfiler;\nexports.isStrictMode = isStrictMode;\nexports.isSuspense = isSuspense;\n  })();\n}\n\n\n//# sourceURL=webpack:///./node_modules/react-is/cjs/react-is.development.js?");
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ \"./node_modules/react-is/cjs/react-is.development.js\");\n}\n\n\n//# sourceURL=webpack:///./node_modules/react-is/index.js?");
 
 /***/ }),
 

@@ -14,6 +14,11 @@ class GooglePlayDataSource:
         self.df = pd.read_csv(self.data_path)
         for column in self. columns_to_filter:
             self.df[column] = self.df[column].str.lower()
+        self.df = self.df.fillna(0)
+        self.df['Type'] = [str(i) for i in self.df['Type']]
+        self.df['Content Rating'] = [str(i) for i in self.df['Content Rating']]
+
+
 
     @property
     def columns(self):
@@ -25,7 +30,7 @@ class GooglePlayDataSource:
             'Genres': ['genre', 'genres'],
             'Type': ['type', 'monetization'],
             'Android Ver': ['android version', 'android ver', 'android'],
-            'Content Rating': ['content rating', 'content'],
+            'Content Rating': ['content'],
             'Installs': ['installs', 'user'],
             'Category': ['category'],
             'Price': ['price', 'expensive']

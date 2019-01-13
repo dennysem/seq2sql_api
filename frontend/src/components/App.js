@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import DataProvider from "./DataProvider";
 import Table from "./Table";
 import SearchBar from "./SearchBar";
+import Header from './layout/Header';
+
 
 class App extends Component {
     state = {
@@ -19,6 +21,7 @@ class App extends Component {
         return (
             <div className="App">
               <div className="container">
+                <Header />
                 <SearchBar makeQuery={ this.makeQuery } />
                 <DataProvider endpoint="api/parse/"
                     query={ this.state.query }

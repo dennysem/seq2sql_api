@@ -19,7 +19,12 @@ class EntityExtractor:
         return list(dimensions)
 
     def _extract_aggregation(self, query):
-        return None
+        if query == 'all apps':
+            return 'all'
+        elif 'rating' in query:
+            return 'mean'
+        else:
+            return 'count'
 
     def _extract_filters(self, query):
         filters = set()
